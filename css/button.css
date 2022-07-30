@@ -1,0 +1,54 @@
+.button-wrapper {
+    display: inline-block;
+    padding: 18px 0;
+}
+.button {
+   padding: 20px 50px;
+   background-color: #01996D;
+   border-radius: 4px;
+   
+   font-family: 'Lato';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 25px;
+   color: #FFFFFF;
+   
+   transition: opacity 0.25s ease;
+}
+.button:hover {
+    opacity: 0.8;
+}
+
+
+/* Media queries 
+======================================================*/
+@media (max-width: 1199px) {
+    .button {
+        padding: 16px 38px;
+     }
+}
+@media (max-width: 991px) {
+    .button {
+        font-size: 17px;
+     }
+}
+@media (max-width: 767px) {
+    .button {
+        padding: 14px 30px;
+     }
+     .button {
+        font-size: 12px;
+     }
+}
+@media (max-width: 575px) {
+    .button {
+        padding: 10px 20px;
+     }
+     .button {
+        font-size: 10px;
+     }
+}
+@media (max-width: 320px) {
+
+}

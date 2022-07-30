@@ -1,0 +1,121 @@
+.header {
+    padding: 17px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #D6D6D6;
+}
+.header-row {
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    margin-right: 172px;
+}
+.header-logo__link {
+    transition: opacity 0.25s ease;
+}
+.header-logo__link:hover {
+    opacity: 0.8;
+}
+.header-nav-list {
+    display: flex;
+    gap: 72px;
+}
+.header-nav-list-item__link {
+    line-height: 24px;
+    color: #292929;
+    position: relative;    
+    transition: color 0.25s ease;
+}
+.header-nav-list-item__link:hover {
+    color: #01996D;
+}
+.header-nav-list-item__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    border: 0.2px solid transparent;
+    transition: left 0.3s ease, right 0.3s ease;
+
+}
+.header-nav-list-item__link:hover::after {
+    left: 1px;
+    right: 1px;
+    border-color: #01996D;
+}
+.header-login {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.header-login__sign-in-link {
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+    position: relative;
+    transition: color 0.25s ease ;    
+}
+.header-login__sign-in-link:hover {
+    color: #01996D;
+}
+.header-login__sign-in-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    border: 0.2px solid transparent;
+    transition: left 0.3s ease, right 0.3s ease;
+}
+.header-login__sign-in-link:hover::after {
+    left: 1px;
+    right: 1px;
+    border-color: #01996D;
+}
+.header-login__start-trial-btn {
+    padding: 13px 50px;
+    box-sizing: border-box;
+    background-color: #01996D;
+    border-radius: 4px;
+
+    font-weight: 400;
+    line-height: 25px;
+    color: #FFFFFF;
+    transition: opacity 0.25s ease;    
+}
+.header-login__start-trial-btn:hover {
+    opacity: 0.8;
+}
+
+
+/* Media queries 
+======================================================*/
+@media (max-width: 1400px){
+    .header-row {
+        justify-content: space-between;
+    }
+    .header-logo {
+        margin-right: 0;
+    }
+    .header-login {
+        margin-left: 0;
+    }
+}
+@media (max-width: 1199px) {
+    .header-nav {
+        display: none;
+    }
+    .header-login {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .header {
+        padding: 12px 0;
+    }
+}
+@media (max-width: 320px) {
+
+}

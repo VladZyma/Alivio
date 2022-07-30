@@ -1,0 +1,108 @@
+.home {
+    padding: 175px 0 336px;
+    box-sizing: border-box;
+    position: relative;
+}
+.home-content {
+    max-width: 440px;
+}
+.home-content__title {
+    margin-bottom: 30px;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 74px;
+    color: #01996D;    
+}
+.home-content-description {
+    max-width: 420px;
+    margin-bottom: 53px;
+}
+.home-content-description__text {
+    font-weight: 400;
+    line-height: 144.5%;
+    color: #484848;     
+}
+.home-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.home-background__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Media queries 
+======================================================*/
+@media (max-width: 1400px) {
+    .home {
+        padding: 160px 0 320px;
+    }
+}
+@media (max-width: 1199px) {
+    .home {
+        padding: 150px 0 300px;
+    }
+    .home-content__title {
+        font-size: 55px;
+    }
+}
+@media (max-width: 991px) {
+    .home {
+        padding: 110px 0 240px;
+    }
+    .home-content {
+        max-width: 337px;
+    }
+    .home-content__title {
+        font-size: 36px;
+        line-height: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .home {
+        padding: 80px 0 160px;
+    }
+    .home-content {
+        max-width: 252px;
+        margin-top: 60px;
+    }
+    .home-content__title {
+        margin-bottom: 15px;
+        font-size: 27px;
+        line-height: 32px;
+    }
+    .home-content-description {
+        max-width: 420px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 575px) {
+    .home {
+        padding: 40px 0 70px;
+    }
+    .home-content {
+        max-width: 187px;
+        margin-top: 60px;
+    }
+    .home-content__title {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .home-content-description {
+        max-width: 420px;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 320px) {
+
+}
